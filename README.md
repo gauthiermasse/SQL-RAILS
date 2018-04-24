@@ -14,7 +14,9 @@ Chaque article est lié à un User, via la création de la colonne user_id dans 
 De la même manière, les articles sont liés à une catégorie, via la création de la colonne category_id dans la table article. (je n'ai donc qu'une catégorie par article dans ma table article, ce qui n'est pas bon)
 
 Le modèle Article a les caractéristiques suivantes: belongs_to :user ; et has_many :category
+
 Le modèle User: has_many :article
+
 Le modèle Category: has_many :article
 
 
