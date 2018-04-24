@@ -1,24 +1,23 @@
-# README
+Projet 24/04/2018 SQL Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+@Gauthier sur slack
 
-Things you may want to cover:
+Hello!
 
-* Ruby version
+J'ai vraiment pas mal galéré aujourd'hui, j'ai réussi à faire quelques trucs sur l'exo 1 (que j'explique après) mais je ne suis absolument pas sûr que c'était ce qu'il fallait faire!
 
-* System dependencies
+Mon projet: 
 
-* Configuration
+J'ai créé 3 models: User, Category, Article. 
 
-* Database creation
+Chaque article est lié à un User, via la création de la colonne user_id dans la table article. 
+De la même manière, les articles sont liés à une catégorie, via la création de la colonne category_id dans la table article. (je n'ai donc qu'une catégorie par article dans ma table article, ce qui n'est pas bon)
 
-* Database initialization
+Le modèle Article a les caractéristiques suivantes: belongs_to :user ; et has_many :category
+Le modèle User: has_many :article
+Le modèle Category: has_many :article
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+Pour chacune de ces tables, j'ai généré des seeds: des noms aléatoires de user, des articles dont le contenu et les user_id et category_id sont aléatoires, et des catégories aléatoires de bières. 
 
-* ...
